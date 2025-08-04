@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>UploadDude - ارفع ملفاتك الآن</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>📤 UploadDude</h1>
+  <p>ارفع ملفاتك واحصل على رابط تحميل مباشر خلال ثواني</p>
+
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <br>
+    <button type="submit">⬆️ ارفع الملف</button>
+  </form>
+
+  <div id="progress-container" style="display:none; margin-top: 20px;">
+    <progress id="progressBar" value="0" max="100" style="width: 300px;"></progress>
+    <p id="percentText">0%</p>
+  </div>
+
+  <div id="response"></div>
+
+  <footer style="margin-top: 50px; opacity: 0.6;">
+    <p>© 2025 UploadDude. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
